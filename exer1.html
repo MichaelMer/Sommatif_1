@@ -3,8 +3,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercice 1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="exer1.js"></script>
 </head>
 <body>
-    <p>test</p>>
+    <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Super calculateur</h5>
+            
+            <div class="form-group">
+                <label for="valeur1">Valeur 1</label>
+                <input type="number" class="form-control" id="valeur1">
+            </div>
+
+            <div class="form-group">
+                <label for="operateur">Opérateur</label>
+                <input type="text" class="form-control" id="operateur">
+            </div>
+
+            <div class="form-group">
+                <label for="valeur2">Valeur 2</label>
+                <input type="number" class="form-control" id="valeur2">
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary" onclick="operations()">Calculer</button>
+            </div>
+
+            <div class="form-group">
+                <label for="solution">Solution</label>
+                <input type="text" readonly class="form-control" id="solution" value="">
+            </div>
+        </div>
+    </div>
 </body>
 </html>
